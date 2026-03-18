@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --border: 214.3 31.8% 91.4%;
+  --radius: 0.5rem;
+  --cyan: 180 100% 65%;
+  --cyan-foreground: 192 40% 4%;
+}
+
+.dark {
+  --background: 192 40% 4%;
+  --foreground: 180 10% 92%;
+  --card: 192 35% 6%;
+  --card-foreground: 180 10% 92%;
+  --primary: 180 10% 92%;
+  --primary-foreground: 192 40% 4%;
+  --secondary: 192 25% 10%;
+  --secondary-foreground: 180 10% 92%;
+  --muted: 192 20% 12%;
+  --muted-foreground: 190 15% 55%;
+  --accent: 192 25% 10%;
+  --accent-foreground: 180 10% 92%;
+  --border: 192 20% 15%;
+  --cyan: 180 100% 65%;
+  --cyan-foreground: 192 40% 4%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+/* ROI calculator range slider */
+.roi-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.roi-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: hsl(180 100% 65%);
+  cursor: pointer;
+  border: 2px solid hsl(192 40% 4%);
+  box-shadow: 0 0 10px hsl(180 100% 65% / 0.3);
+  transition: box-shadow 0.2s ease;
+}
+
+.roi-slider::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 16px hsl(180 100% 65% / 0.5);
+}
+
+.roi-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: hsl(180 100% 65%);
+  cursor: pointer;
+  border: 2px solid hsl(192 40% 4%);
+  box-shadow: 0 0 10px hsl(180 100% 65% / 0.3);
+  transition: box-shadow 0.2s ease;
+}
+
+.roi-slider::-moz-range-thumb:hover {
+  box-shadow: 0 0 16px hsl(180 100% 65% / 0.5);
+}
+
+.roi-slider::-moz-range-track {
+  height: 6px;
+  border-radius: 3px;
+  background: transparent;
+}
+
+/* Hide numeric input spinners */
+.no-number-spinner::-webkit-outer-spin-button,
+.no-number-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-number-spinner[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
