@@ -1,0 +1,16 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OOH Stack logo">
+  <rect width="512" height="512" rx="120" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="183" fill="url(#ringFill)" stroke="#67E8F9" stroke-width="14"/>
+  <text x="256" y="285" text-anchor="middle" fill="#CFFAFE" font-family="Inter, Arial, sans-serif" font-size="130" font-weight="800" letter-spacing="4">OOH</text>
+  <defs>
+    <linearGradient id="bg" x1="48" y1="32" x2="476" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#041F23"/>
+      <stop offset="1" stop-color="#072D34"/>
+    </linearGradient>
+    <radialGradient id="ringFill" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(200 168) rotate(57.7) scale(318)">
+      <stop stop-color="#22D3EE" stop-opacity="0.3"/>
+      <stop offset="0.6" stop-color="#22D3EE" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

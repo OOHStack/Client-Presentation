@@ -46,7 +46,7 @@ export function DeckLogo({ currentSlide }: DeckLogoProps) {
       }}
     >
       <Image
-        src="/ooh-stack-logo.png"
+        src="/ooh-stack-logo.svg"
         alt="OOH Stack"
         width={256}
         height={256}
