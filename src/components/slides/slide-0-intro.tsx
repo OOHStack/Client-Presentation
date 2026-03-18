@@ -84,7 +84,7 @@ function ProductMock() {
 export function Slide0Intro() {
   return (
     <SlideContainer>
-      <div className="mx-auto flex max-w-3xl flex-col items-center pt-16 text-center sm:pt-20">
+      <div className="mx-auto flex w-full max-w-3xl flex-col items-center px-1 pt-16 text-center sm:px-0 sm:pt-20">
         {/* Badge pill */}
         <motion.div
           variants={fadeUp}
@@ -109,7 +109,7 @@ export function Slide0Intro() {
             letterSpacing: "-0.02em",
           }}
         >
-          <span className="whitespace-nowrap">Preserve the value of your OOH inventory</span>
+          <span className="sm:whitespace-nowrap">Preserve the value of your OOH inventory</span>
           <br />
           through every handoff to increase clients&apos; likelihood of purchase
         </motion.h1>
