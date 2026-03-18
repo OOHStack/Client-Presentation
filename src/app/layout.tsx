@@ -25,10 +25,8 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/opengraph-image.png",
-        width: 1200,
-        height: 630,
-        alt: "OOH Stack sales deck preview",
+        url: "/ooh-stack-logo.png",
+        alt: "OOH Stack logo",
       },
     ],
   },
@@ -36,12 +34,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "OOH Stack — Sales Deck",
     description: "Interactive sales presentation for OOH Stack",
-    images: ["/twitter-image.png"],
+    images: ["/ooh-stack-logo.png"],
   },
   icons: {
-    icon: [{ url: "/icon.png" }],
-    shortcut: [{ url: "/icon.png" }],
-    apple: [{ url: "/icon.png" }],
+    icon: [{ url: "/ooh-stack-logo.png" }],
+    shortcut: [{ url: "/ooh-stack-logo.png" }],
+    apple: [{ url: "/ooh-stack-logo.png" }],
   },
 };
 
