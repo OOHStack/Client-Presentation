@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Building2, BriefcaseBusiness, ShieldCheck, UserRound } from "lucide-react";
+import { ArrowRight, Building2, BriefcaseBusiness, Calendar, ShieldCheck, UserRound } from "lucide-react";
 import { SlideContainer } from "@/components/deck/slide-container";
 import { fadeUp } from "@/lib/motion";
 
@@ -104,12 +104,26 @@ export function SlideCTA() {
           </div>
         </motion.div>
 
+        <motion.a
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          custom={0.55}
+          href="https://calendly.com/vinesh-oohstack/30min"
+          target="_blank"
+          rel="noreferrer"
+          className="mt-8 inline-flex w-full max-w-sm items-center justify-center gap-2 rounded-xl border-2 border-cyan bg-cyan/20 px-6 py-3.5 text-base font-semibold text-cyan-100 transition-all hover:border-cyan hover:bg-cyan/30"
+        >
+          <Calendar className="h-5 w-5" />
+          Book meeting
+        </motion.a>
+
         <motion.div
           variants={fadeUp}
           initial="hidden"
           animate="visible"
           custom={0.62}
-          className="mt-8 flex w-full max-w-4xl flex-col items-center gap-3 sm:flex-row"
+          className="mt-6 flex w-full max-w-4xl flex-col items-center gap-3 sm:flex-row"
         >
           <a
             href="https://ooh-stack-allvision-demo-project.vercel.app/"
