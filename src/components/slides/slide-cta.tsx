@@ -112,24 +112,21 @@ export function SlideCTA() {
           className="mt-8 flex w-full max-w-4xl flex-col items-center gap-3 sm:flex-row"
         >
           <a
-            href="#"
+            href="https://ooh-stack-allvision-demo-project.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
             className="group flex w-full items-center justify-center gap-2 rounded-lg border border-cyan/50 bg-transparent px-5 py-2.5 text-sm font-medium text-foreground transition-all hover:border-cyan hover:bg-cyan/5"
           >
-            Demo One
+            Allvision Demo
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </a>
           <a
-            href="#"
+            href="https://ooh-stack-frontrunner-demo-project.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
             className="group flex w-full items-center justify-center gap-2 rounded-lg border border-cyan/40 bg-transparent px-5 py-2.5 text-sm font-medium text-foreground transition-all hover:border-cyan hover:bg-cyan/5"
           >
-            Demo Two
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-          </a>
-          <a
-            href="#"
-            className="group flex w-full items-center justify-center gap-2 rounded-lg border border-cyan/40 bg-transparent px-5 py-2.5 text-sm font-medium text-foreground transition-all hover:border-cyan hover:bg-cyan/5"
-          >
-            Demo Three
+            Frontrunner Demo
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </a>
         </motion.div>
