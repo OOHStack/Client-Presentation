@@ -1,4 +1,4 @@
-export const TOTAL_SLIDES = 8;
+export const TOTAL_SLIDES = 10;
 
 export const SLIDE_TITLES = [
   "OOH Stack",
@@ -8,6 +8,8 @@ export const SLIDE_TITLES = [
   "Agencies (Buyers & Planners)",
   "Client Benefits",
   "ROI Calculator",
+  "Investment Overview",
+  "Partnership",
   "Get Started",
 ] as const;
 

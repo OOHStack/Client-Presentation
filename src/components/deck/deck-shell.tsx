@@ -14,6 +14,8 @@ import { Slide3Experience } from "@/components/slides/slide-3-experience";
 import { Slide4Workflow } from "@/components/slides/slide-4-workflow";
 import { Slide5Vendors } from "@/components/slides/slide-5-vendors";
 import { Slide6ROI } from "@/components/slides/slide-6-roi";
+import { Slide7InvestmentOverview } from "@/components/slides/slide-7-investment-overview";
+import { Slide8Partnership } from "@/components/slides/slide-8-partnership";
 import { SlideCTA } from "@/components/slides/slide-cta";
 
 const slides = [
@@ -24,6 +26,8 @@ const slides = [
   Slide3Experience,
   Slide4Workflow,
   Slide6ROI,
+  Slide7InvestmentOverview,
+  Slide8Partnership,
   SlideCTA,
 ];
 
