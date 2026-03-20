@@ -8,7 +8,7 @@ import { fadeUp } from "@/lib/motion";
 export function SlideCTA() {
   return (
     <SlideContainer>
-      <div className="mx-auto flex h-full w-full max-w-5xl flex-col items-center overflow-y-auto pb-6 pt-20 text-center sm:pt-24">
+      <div className="scrollbar-deck mx-auto flex h-full w-full max-w-5xl flex-col items-center overflow-y-auto pb-6 pt-20 text-center sm:pt-24">
         <motion.a
           variants={fadeUp}
           initial="hidden"

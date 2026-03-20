@@ -48,6 +48,36 @@
   }
 }
 
+/* Dark deck scrollbars — matches ROI / product panels; transparent track, muted thumb */
+@layer utilities {
+  .scrollbar-deck {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(192 20% 24%) transparent;
+  }
+
+  .scrollbar-deck::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-deck::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-deck::-webkit-scrollbar-thumb {
+    background-color: hsl(192 20% 24%);
+    border-radius: 9999px;
+  }
+
+  .scrollbar-deck::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(192 20% 32%);
+  }
+
+  .scrollbar-deck::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
+
 /* ROI calculator range slider */
 .roi-slider {
   -webkit-appearance: none;
