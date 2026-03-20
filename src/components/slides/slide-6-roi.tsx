@@ -101,10 +101,10 @@ function SliderInput({
 
 function SectionLabel({ children }: { children: string }) {
   const toneMap: Record<string, string> = {
-    "Platform Pricing": "text-cyan-200",
-    "Team & Campaign Inputs": "text-amber-200",
-    "Assumption Metrics": "text-violet-200",
-    "Advanced Assumptions": "text-foreground/80",
+    "Your platform investment": "text-cyan-200",
+    "Your team & deals": "text-amber-200",
+    "What improvements do you expect?": "text-violet-200",
+    "Want to go deeper?": "text-foreground/80",
   };
 
   return (
@@ -247,7 +247,7 @@ export function Slide6ROI() {
             What this can be worth for your business
           </h2>
           <p className="mt-1 text-[12px] font-light text-muted-foreground">
-            Adjust the assumptions to reflect your team and see the potential first-year impact.
+            Answer a few questions about your team and investment to see the modeled first-year impact.
           </p>
         </motion.div>
 
@@ -271,9 +271,9 @@ export function Slide6ROI() {
             </div>
 
             <div className="grid grid-cols-1 gap-x-2.5 gap-y-1.5 sm:grid-cols-2">
-              <SectionLabel>Platform Pricing</SectionLabel>
+              <SectionLabel>Your platform investment</SectionLabel>
               <SliderInput
-                label="Setup Cost"
+                label="What's your one-time setup investment?"
                 value={setupCost}
                 min={0}
                 max={50000}
@@ -285,7 +285,7 @@ export function Slide6ROI() {
                 showSlider={false}
               />
               <SliderInput
-                label="Monthly Cost"
+                label="What's your monthly platform cost?"
                 value={monthlyCost}
                 min={0}
                 max={5000}
@@ -297,9 +297,9 @@ export function Slide6ROI() {
                 showSlider={false}
               />
 
-              <SectionLabel>Team & Campaign Inputs</SectionLabel>
+              <SectionLabel>Your team & deals</SectionLabel>
               <SliderInput
-                label="Sales Reps"
+                label="How many sales reps are on the team?"
                 value={reps}
                 min={1}
                 max={20}
@@ -309,7 +309,7 @@ export function Slide6ROI() {
                 showSlider
               />
               <SliderInput
-                label="Proposals / Rep / Month"
+                label="How many proposals does each rep send per month?"
                 value={proposalsPerRep}
                 min={1}
                 max={30}
@@ -319,8 +319,8 @@ export function Slide6ROI() {
                 showSlider
               />
               <SliderInput
-                label="Hours per Proposal"
-                hint="(typical 1.5-3h)"
+                label="How many hours does a typical proposal take today?"
+                hint="(often 1.5–3h)"
                 value={hoursPerProposal}
                 min={0.5}
                 max={5}
@@ -331,7 +331,7 @@ export function Slide6ROI() {
                 showSlider
               />
               <SliderInput
-                label="Blended Hourly Cost"
+                label="What's your blended hourly cost (loaded rate)?"
                 value={hourlyCost}
                 min={25}
                 max={200}
@@ -342,7 +342,7 @@ export function Slide6ROI() {
                 showSlider
               />
               <SliderInput
-                label="Avg Campaign Value"
+                label="What's a typical campaign value?"
                 value={campaignValue}
                 min={5000}
                 max={100000}
@@ -353,8 +353,8 @@ export function Slide6ROI() {
                 showSlider
               />
               <SliderInput
-                label="Campaign Margin"
-                hint="(typical 20-40%)"
+                label="What margin do you expect on a campaign?"
+                hint="(often 20–40%)"
                 value={campaignMargin}
                 min={10}
                 max={50}
@@ -364,9 +364,9 @@ export function Slide6ROI() {
                 tone="amber"
                 showSlider
               />
-              <SectionLabel>Assumption Metrics</SectionLabel>
+              <SectionLabel>What improvements do you expect?</SectionLabel>
               <SliderInput
-                label="Proposal Time Reduction"
+                label="How much could proposal time go down?"
                 value={timeReductionPct}
                 min={0}
                 max={100}
@@ -377,7 +377,7 @@ export function Slide6ROI() {
                 showSlider
               />
               <SliderInput
-                label="Education Reduction"
+                label="How much could education / onboarding time drop?"
                 value={educationReductionPct}
                 min={0}
                 max={100}
@@ -388,7 +388,7 @@ export function Slide6ROI() {
                 showSlider
               />
               <SliderInput
-                label="Communication Reduction"
+                label="How much could email & coordination time drop?"
                 value={communicationReductionPct}
                 min={0}
                 max={100}
@@ -402,9 +402,9 @@ export function Slide6ROI() {
 
             {showAdvanced && (
               <div className="mt-2 grid grid-cols-1 gap-x-2.5 gap-y-1.5 border-t border-border/35 pt-2 sm:grid-cols-2">
-                <SectionLabel>Advanced Assumptions</SectionLabel>
+                <SectionLabel>Want to go deeper?</SectionLabel>
                 <SliderInput
-                  label="Ramp Time Reduction"
+                  label="How many ramp days could you cut per new hire?"
                   hint="(days)"
                   value={rampDays}
                   min={0}
@@ -416,7 +416,7 @@ export function Slide6ROI() {
                   showSlider
                 />
                 <SliderInput
-                  label="Incremental Deals / Year"
+                  label="How many incremental deals per year (whole team)?"
                   hint="(total team)"
                   value={incrementalDeals}
                   min={0}
@@ -427,7 +427,7 @@ export function Slide6ROI() {
                   showSlider
                 />
                 <SliderInput
-                  label="Education Hours / Rep / Month"
+                  label="How many education hours per rep, per month?"
                   value={educationHours}
                   min={0}
                   max={20}
@@ -438,7 +438,7 @@ export function Slide6ROI() {
                   showSlider
                 />
                 <SliderInput
-                  label="Email Hours / Rep / Month"
+                  label="How many email hours per rep, per month?"
                   value={emailHours}
                   min={0}
                   max={20}
@@ -462,11 +462,11 @@ export function Slide6ROI() {
           >
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
               <div className="rounded-lg border border-cyan/30 bg-cyan/5 px-3 py-2 sm:col-span-2">
-                <p className="text-[11px] text-muted-foreground">First Year Net Benefit</p>
+                <p className="text-[11px] text-muted-foreground">Your first-year net benefit</p>
                 <p className="font-mono text-xl text-cyan">{fmt(netBenefit)}</p>
               </div>
               <div className="rounded-lg border border-border/40 bg-card/45 px-2 py-2 text-center">
-                <p className="text-[10px] text-muted-foreground">Annual Value</p>
+                <p className="text-[10px] text-muted-foreground">Annual value (modeled)</p>
                 <p className="font-mono text-[15px] text-foreground/90">{fmt(totalAnnualValue)}</p>
               </div>
             </div>
@@ -478,7 +478,7 @@ export function Slide6ROI() {
                     {roi}%
                   </div>
                   <div className="mt-0.5 text-[10px] font-light text-muted-foreground sm:text-[11px]">
-                    First Year ROI
+                    First-year ROI
                   </div>
                 </div>
                 <div className="rounded-lg border border-border/50 bg-card/40 px-2.5 py-2 text-center backdrop-blur-sm">
@@ -486,7 +486,7 @@ export function Slide6ROI() {
                     {breakEvenMonths} mo
                   </div>
                   <div className="mt-0.5 text-[10px] font-light text-muted-foreground sm:text-[11px]">
-                    Break-even Period
+                    Months to break even
                   </div>
                 </div>
               </div>
@@ -494,7 +494,7 @@ export function Slide6ROI() {
 
             <div className="rounded-lg border border-border/35 bg-card/25 px-3 py-2">
               <p className="mb-2 text-[11px] uppercase tracking-wide text-cyan/80">
-                Value Breakdown
+                Where the value comes from
               </p>
               <div className="space-y-1.5">
                 {valueComponents.map((item) => (
@@ -508,20 +508,20 @@ export function Slide6ROI() {
                 ))}
 
                 <BreakdownRow
-                  label="Hours saved per month"
+                  label="Proposal hours saved / month"
                   value={`${Math.round(hoursSavedPerMonth)}h`}
                   widthPct={Math.min(100, (hoursSavedPerMonth / 240) * 100)}
                 />
 
                 <BreakdownRow
-                  label="Ramp savings per hire"
+                  label="Ramp-time savings per hire"
                   value={fmt(rampSavingsPerHire)}
                   widthPct={Math.min(100, (rampSavingsPerHire / 25000) * 100)}
                 />
 
                 {totalYear1Investment > 0 && (
                   <BreakdownRow
-                    label="Year 1 investment"
+                    label="Year-one investment"
                     value={`-${fmt(totalYear1Investment)}`}
                     widthPct={(totalYear1Investment / Math.max(totalAnnualValue, 1)) * 100}
                   />
@@ -530,9 +530,9 @@ export function Slide6ROI() {
             </div>
 
             <p className="mt-auto text-center text-[10px] font-light text-muted-foreground/45">
-              {timeReductionPct}% proposal time reduction &middot; {educationReductionPct}%
-              {" "}education reduction &middot; {communicationReductionPct}% communication
-              {" "}reduction
+              You&apos;re assuming {timeReductionPct}% less proposal time &middot;{" "}
+              {educationReductionPct}% less education time &middot; {communicationReductionPct}%
+              {" "}less email &amp; coordination time
             </p>
           </motion.div>
         </div>

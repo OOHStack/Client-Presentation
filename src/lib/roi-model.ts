@@ -116,10 +116,10 @@ export function computeRoiModel(inputs: RoiModelInputs): RoiModelResult {
       : 0;
 
   const valueComponents = [
-    { label: "Time savings", value: annualTimeSavings, accent: true },
-    { label: "Education savings", value: eduAnnualSavings, accent: false },
-    { label: "Communication savings", value: commAnnualSavings, accent: false },
-    { label: "Revenue impact", value: revenueImpact, accent: true },
+    { label: "Time saved on proposals & workflow", value: annualTimeSavings, accent: true },
+    { label: "Time saved on education / onboarding", value: eduAnnualSavings, accent: false },
+    { label: "Time saved on email & coordination", value: commAnnualSavings, accent: false },
+    { label: "Incremental deals (margin)", value: revenueImpact, accent: true },
     { label: "Website replacement", value: websiteSavings, accent: false },
   ].filter((item) => item.value > 0);
 
